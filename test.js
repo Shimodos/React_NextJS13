@@ -1,2 +1,2 @@
 "use strict";
-const a = 5;
+const a = 6;
