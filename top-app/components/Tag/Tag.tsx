@@ -1,4 +1,4 @@
-import { Tag } from './Tag.props';
+import { TagProps } from './Tag.props';
 import styles from './Tag.module.css';
 import cn from 'classnames';
 
@@ -9,7 +9,7 @@ export const Tag = ({
   href,
   className,
   ...props
-}: Tag): JSX.Element => {
+}: TagProps): JSX.Element => {
   return (
     <div
       className={cn(styles.tag, className, {
