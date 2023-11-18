@@ -1,48 +1,46 @@
 .button {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 10px;
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: all 0.3s ease;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: all 0.3s ease;
 }
 
 .primary {
-  color: var(--white);
-  background-color: var(--primary);
+	color: var(--white);
+	background-color: var(--primary);
 }
 
 .primary:hover {
-  background-color: var(--primary-hover);
+	background-color: var(--primary-hover);
 }
 
 .ghost {
-  color: var(--black);
-  background: none;
-  border: 1px solid var(--gray-light);
+	color: var(--black);
+	background: none;
+	border: 1px solid var(--gray-light);
 }
 
 .ghost:hover {
-  color: var(--white);
-  background-color: var(--primary);
+	color: var(--white);
+	background-color: var(--primary);
 }
 
-
-
 .arrow {
-  display: inline-block;
-  margin-left: 10px;
+	display: inline-block;
+	margin-left: 10px;
 }
 
 .down {
-  transform: rotate(90deg);
-  transform: all 0.2s ease;
+	transform: rotate(90deg);
+	transform: all 0.2s ease;
 }
 
 .primary svg,
 .ghost:hover svg {
-  fill: var(--white);
+	fill: var(--white);
 }
