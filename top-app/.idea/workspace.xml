@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="98a6788a-6a2f-4031-9200-169e776a5911" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +39,12 @@
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.stylelint": "C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -54,6 +61,9 @@
       <workItem from="1700505743892" duration="41000" />
       <workItem from="1700505841275" duration="2000" />
       <workItem from="1700505927938" duration="37000" />
+      <workItem from="1701083989362" duration="172000" />
+      <workItem from="1701084180203" duration="59000" />
+      <workItem from="1701085584576" duration="594000" />
     </task>
     <servers />
   </component>
