@@ -1,0 +1,21 @@
+import styles from './Menu.module.css';
+import cn from 'classnames';
+import { format } from 'date-fns';
+import { useContext } from 'react';
+import { AppContext } from '../../context/app.context';
+
+export const Menu = ({ className, ...props }): JSX.Element => {
+  const { menu, setMenu, firstCategory } = useContext(AppContext);
+
+  return (
+    <div>
+      <ul>
+        {menu.map((m) => (
+          <li key={m._id.secondCategory}>
+            <a href="#">{m._id.secondCategory}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
