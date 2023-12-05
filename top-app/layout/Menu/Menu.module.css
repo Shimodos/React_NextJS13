@@ -8,6 +8,7 @@
   font-weight: 500;
   color: var(--gray-dark);
   margin-top: 20px;
+
 }
 
 
@@ -41,9 +42,16 @@
   border-left: 1px solid #dfdfdf;
 }
 
+.secondLevelBlock {
+  display: none;
+}
+
+.secondLevelBlockOpened {
+  display: block;
+}
+
 .secondLevelBlockOpened:last-child {
   margin-bottom: 20px;
-
 }
 
 .thirdLevel {
