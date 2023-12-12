@@ -8,6 +8,7 @@ export interface PageItem {
 }
 
 export interface MenuItem {
+  route: any;
   _id: {
     secondCategory: string;
   };
