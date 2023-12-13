@@ -7,12 +7,13 @@ import { TopLevelCategory, TopPageModel } from '../../interfaces/page.interface'
 import { ParsedUrlQuery } from 'node:querystring';
 import { PropductModel } from '../../interfaces/product.interface';
 import { firstLeveMenu } from '../../helpers/helpers';
+import { TopPageComponent } from '@/page-components/TopPageComponents/TopPageComponent';
 
-function Course({ products }: CourseProps): JSX.Element {
-  return <>{products && products.length}</>;
+function TopPage({ firstCategory, page, products }: CourseProps): JSX.Element {
+  return <TopPageComponent firstCategory={firstCategory} page={page} products={products} />;
 }
 
-export default withLayout(Course);
+export default withLayout(TopPage);
 
 export const getStaticPaths: GetStaticPaths = async () => {
   let paths: string[] = [];
