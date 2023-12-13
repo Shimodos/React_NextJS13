@@ -1,6 +1,7 @@
-import { Htag, Tag } from '@/components';
+import { Card, HhData, Htag, Tag } from '@/components';
 import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.css';
+import { TopLevelCategory } from '@/interfaces/page.interface';
 
 export const TopPageComponent = ({
   page,
@@ -16,9 +17,16 @@ export const TopPageComponent = ({
             {products.length}
           </Tag>
         )}
-        <span>Sorts</span>
+        <span>Sort</span>
       </div>
-      {products && products.map((p) => <div key={p._id}>{p.title}</div>)}
+      <div>{products && products.map((p) => <div key={p._id}>{p.title}</div>)}</div>
+      <div className={styles.hhTitle}>
+        <Htag tag="h2">Vacation - {page.category}</Htag>
+        <Tag color="red" size="m">
+          hh.ua
+        </Tag>
+      </div>
+      {firstCategory === TopLevelCategory.Courses && <HhData {...page.hh} />}
     </div>
   );
 };
