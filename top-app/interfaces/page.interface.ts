@@ -12,16 +12,16 @@ export interface TopPageModel {
   alias: string;
   title: string;
   category: string;
-  seoText: string;
+  seoText?: string;
   tagsTitle: string;
   metaTitle: string;
   metaDescription: string;
   firstCategory: TopLevelCategory;
-  advantages: TopPagelAdvantage[];
+  advantages?: TopPageAdvantage[];
   createdAt: string;
   updatedAt: string;
   __v: number;
-  hh: HhData;
+  hh?: HhData;
   qas: any[];
   addresses: any[];
   categoryOn: string;
@@ -30,7 +30,7 @@ export interface TopPageModel {
   learningclub: Learningclub;
 }
 
-export interface TopPagelAdvantage {
+export interface TopPageAdvantage {
   title: string;
   description: string;
   _id: string;
