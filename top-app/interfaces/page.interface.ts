@@ -22,12 +22,17 @@ export interface TopPageModel {
   updatedAt: string;
   __v: number;
   hh?: HhData;
-  qas: any[];
-  addresses: any[];
+  qas: Qa[];
+  addresses: Qa[];
   categoryOn: string;
   blog: Blog;
   sravnikus: Sravnikus;
   learningclub: Learningclub;
+}
+
+export interface Qa {
+  question: string;
+  answer: string;
 }
 
 export interface TopPageAdvantage {
@@ -56,14 +61,14 @@ export interface Blog {
 export interface Sravnikus {
   metaTitle: string;
   metaDescription: string;
-  qas: any[];
+  qas: Qa[];
   _id: string;
 }
 
 export interface Learningclub {
   metaTitle: string;
   metaDescription: string;
-  qas: any[];
+  qas: Qa[];
   _id: string;
 }
 

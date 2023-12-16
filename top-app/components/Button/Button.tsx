@@ -4,7 +4,7 @@ import cn from 'classnames';
 import ArrowIcon from './arrow.svg';
 
 export const Button = ({
-  appearence,
+  appearance,
   arrow = 'none',
   children,
   className,
@@ -13,8 +13,8 @@ export const Button = ({
   return (
     <button
       className={cn(styles.button, className, {
-        [styles.primary]: appearence == 'primary',
-        [styles.ghost]: appearence == 'ghost',
+        [styles.primary]: appearance == 'primary',
+        [styles.ghost]: appearance == 'ghost',
       })}
       {...props}
     >
