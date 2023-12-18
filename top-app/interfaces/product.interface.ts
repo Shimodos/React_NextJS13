@@ -20,6 +20,7 @@ export interface PropductModel {
   oldPrice: number;
   characteristics: PropductCharacteristic[];
   advantages?: string;
+  disadvantages?: string;
   initialRating: number;
   createdAt: string;
   updatedAt: string;
