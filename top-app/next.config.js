@@ -7,6 +7,15 @@ module.exports = {
   images: {
     domains: ['courses-top.ru'],
   },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: 'courses-top.ru',
+  //       pathname: '**',
+  //     },
+  //   ],
+  // },
   webpack(config, options) {
     config.module.rules.push({
       loader: '@svgr/webpack',

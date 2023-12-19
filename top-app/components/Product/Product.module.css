@@ -18,6 +18,7 @@
 .price,
 .priceTitle {
   grid-column: pricestart / priceend;
+  white-space: nowrap;
 }
 
 .credit,
@@ -142,4 +143,151 @@
 .characteristicsDots {
   border-bottom: 1px dashed var(--gray-light);
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1320px) {
+  .product {
+    grid-template-columns: 70px 30px auto 40px auto 40px 1fr;
+    grid-template-areas:
+      'logo . title title title title title'
+      'logo . tags tags tags tags tags'
+      'price price price . credit . rating'
+      'priceTitle priceTitle priceTitle . creditTitle . ratingTitle'
+      'hr hr hr hr hr hr hr'
+      'description description description description description description description'
+      'feature feature feature feature feature feature feature'
+      'advBlock advBlock advBlock advBlock advBlock advBlock advBlock'
+      'hr2 hr2 hr2 hr2 hr2 hr2 hr2'
+      'action action action action action action action'
+    ;
+  }
+
+  .logo {
+    grid-area: logo;
+    margin-bottom: 20px;
+    grid-row: 1 / span 2;
+  }
+
+  .title {
+    grid-area: title;
+    align-self: flex-end;
+  }
+
+  .tags {
+    margin-bottom: 20px;
+    grid-area: tags;
+  }
+
+  .price {
+    grid-area: price;
+    align-self: flex-end;
+  }
+
+  .credit {
+    grid-area: credit;
+    align-self: flex-end;
+  }
+
+  .rating {
+    grid-area: rating;
+    align-self: flex-end;
+  }
+
+  .priceTitle {
+    grid-area: priceTitle;
+    align-self: flex-start;
+  }
+
+  .creditTitle {
+    grid-area: creditTitle;
+    align-self: flex-start;
+  }
+
+  .ratingTitle {
+    grid-area: ratingTitle;
+    align-self: flex-start;
+  }
+
+  .hr {
+    grid-area: hr;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    grid-area: description;
+  }
+
+  .feature {
+    grid-area: feature;
+  }
+
+  .advBlock {
+    grid-area: advBlock;
+  }
+
+  .hr2 {
+    grid-area: hr2;
+  }
+
+  .action {
+    grid-area: action;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .product {
+    grid-template-columns: 70px 30px 1fr;
+    grid-template-areas:
+      'logo . title'
+      'logo . tags'
+      'priceTitle priceTitle price'
+      'creditTitle creditTitle credit'
+      'ratingTitle ratingTitle rating'
+      'hr hr hr'
+      'description description description'
+      'feature feature feature'
+      'advBlock advBlock advBlock'
+      'hr2 hr2 hr2'
+      'action action action'
+    ;
+  }
+
+  .price {
+    margin-bottom: 10px;
+    /* justify-self: flex-end; */
+  }
+
+  .credit {
+    margin-bottom: 10px;
+    /* justify-self: flex-end; */
+  }
+
+  .rating {
+    margin-bottom: 10px;
+    /* justify-self: flex-end; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'logo'
+      'title'
+      'tags'
+      'price'
+      'priceTitle'
+      'credit'
+      'creditTitle'
+      'rating'
+      'ratingTitle'
+      'hr'
+      'description'
+      'feature'
+      'advBlock'
+      'hr2'
+      'action'
+    ;
+  }
 }
