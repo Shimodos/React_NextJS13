@@ -7,16 +7,7 @@
     <list default="true" id="98a6788a-6a2f-4031-9200-169e776a5911" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Input/Input.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Product/Product.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Textarea/Textarea.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Textarea/Textarea.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Textarea/Textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Textarea/Textarea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Menu/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,10 +93,23 @@
       <workItem from="1703260436141" duration="25000" />
       <workItem from="1703265096811" duration="2379000" />
       <workItem from="1703268280169" duration="146000" />
+      <workItem from="1703281823046" duration="916000" />
+      <workItem from="1703282752160" duration="92000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

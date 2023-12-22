@@ -1,5 +1,5 @@
 .textarea {
-  padding: 7px 15px;
+  /* padding: 7px 15px; */
   color: var(--)black;
   border: 0;
   outline-color: var(--primary);
@@ -10,11 +10,32 @@
   font-size: 16px;
   line-height: 22px;
   font-family: var(--font-family);
-  resize: none;
+  /* resize: none; */
   min-height: 150px;
+  width: 100%;
 
 }
 
 .textarea::placeholder {
+  padding: 7px 15px;
   color: var(--gray);
+}
+
+.error {
+  border: 1px solid var(--red);
+}
+
+.textareaWrapper {
+  position: relative;
+}
+
+.errorMessage {
+  position: absolute;
+  bottom: -10 px;
+  left: 0;
+  color: var(--red);
+  font-size: 14 px;
+  font-weight: 500;
+  line-height: 16px;
+  /* margin-bottom: 5px; */
 }
