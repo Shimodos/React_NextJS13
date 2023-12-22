@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98a6788a-6a2f-4031-9200-169e776a5911" name="Changes" comment="" />
+    <list default="true" id="98a6788a-6a2f-4031-9200-169e776a5911" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/Input.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReviewForm/ReviewForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Textarea/Textarea.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/Textarea/Textarea.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Textarea/Textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Textarea/Textarea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +46,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OpenServer/domains/localhost/React_NextJS13/top-app/components/ReviewForm&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -41,11 +56,16 @@
     &quot;node.js.selected.package.stylelint&quot;: &quot;C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\stylelint&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\localhost\React_NextJS13\top-app\components\ReviewForm" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +85,23 @@
       <workItem from="1701965358812" duration="16000" />
       <workItem from="1701965464981" duration="274000" />
       <workItem from="1702418899827" duration="39000" />
+      <workItem from="1703238478463" duration="130000" />
+      <workItem from="1703238680243" duration="1000" />
+      <workItem from="1703238779529" duration="896000" />
+      <workItem from="1703244300122" duration="1202000" />
+      <workItem from="1703246132377" duration="408000" />
+      <workItem from="1703246552511" duration="1116000" />
+      <workItem from="1703248472218" duration="576000" />
+      <workItem from="1703249063062" duration="2378000" />
+      <workItem from="1703254927036" duration="10000" />
+      <workItem from="1703254943585" duration="2000" />
+      <workItem from="1703254954548" duration="163000" />
+      <workItem from="1703255125189" duration="71000" />
+      <workItem from="1703255202993" duration="439000" />
+      <workItem from="1703255653886" duration="1383000" />
+      <workItem from="1703260436141" duration="25000" />
+      <workItem from="1703265096811" duration="2379000" />
+      <workItem from="1703268280169" duration="146000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,17 @@
 .input {
-  padding: 7px 15px;
-  color: var(--)black;
-  border: 0;
-  outline-color: var(--primary);
-  background: var(--white);
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-
-  font-size: 16px;
-  line-height: 22px;
-  font-family: var(--font-family);
+	padding: 7px 15px;
+	color: var(--)black;
+	border: 0;
+	outline-color: var(--primary);
+	background: var(--white);
+	border-radius: 5px;
+	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 5%);
+	font-size: 16px;
+	line-height: 22px;
+	font-family: var(--font-family);
 
 }
 
 .input::placeholder {
-  color: var(--gray);
+	color: var(--gray);
 }
