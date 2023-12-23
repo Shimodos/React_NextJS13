@@ -7,7 +7,10 @@ import { Rating } from '../Rating/Rating';
 import { Textarea } from '../Textarea/Textarea';
 import { Button } from '../Button/Button';
 import { useForm, Controller } from 'react-hook-form';
-import { IReviewForm } from './ReviewForm.interface';
+import { IReviewForm, IReviewSentResponse } from './ReviewForm.interface';
+import { API } from '@/helpers/api';
+import axios from 'axios';
+import { useState } from 'react';
 
 export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps): JSX.Element => {
   const {
@@ -15,10 +18,27 @@ export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps):
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<IReviewForm>();
 
-  const onSubmit = (data: IReviewForm) => {
-    console.log(data);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
+  const [error, setIsError] = useState<string>();
+
+  const onSubmit = async (formData: IReviewForm) => {
+    try {
+      const { data } = await axios.post<IReviewSentResponse>(API.review.createDemo, {
+        ...formData,
+        productId,
+      });
+      if (data.message) {
+        setIsSuccess(true);
+        reset();
+      } else {
+        setIsError('Something went wrong');
+      }
+    } catch (e) {
+      setIsError(e.message);
+    }
   };
 
   return (
@@ -42,7 +62,13 @@ export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps):
             name="rating"
             rules={{ required: { value: true, message: 'Rating is required' } }}
             render={({ field }) => (
-              <Rating rating={field.value} ref={field.ref} isEditable setRating={field.onChange} />
+              <Rating
+                rating={field.value}
+                ref={field.ref}
+                isEditable
+                setRating={field.onChange}
+                error={errors.rating}
+              />
             )}
           />
           {/*<Rating rating={0} />*/}
@@ -60,11 +86,19 @@ export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps):
           </span>
         </div>
       </div>
-      <div className={styles.success}>
-        <div className={styles.successTitle}>Your review has been sent</div>
-        <div>Thank you for your feedback. It will appear on the site soon.</div>
-        <CloseIcon className={styles.close} />
-      </div>
+      {isSuccess && (
+        <div className={cn(styles.success, styles.panel)}>
+          <div className={styles.successTitle}>Your review has been sent</div>
+          <div>Thank you for your feedback. It will appear on the site soon.</div>
+          <CloseIcon className={styles.close} onClick={() => setIsSuccess(false)} />
+        </div>
+      )}
+      {error && (
+        <div className={cn(styles.error, styles.panel)}>
+          <div className={styles.errorTitle}>Error sending review, reload page</div>
+          <CloseIcon className={styles.close} onClick={() => setIsError(undefined)} />
+        </div>
+      )}
     </form>
   );
 };
