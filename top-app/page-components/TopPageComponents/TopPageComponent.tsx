@@ -3,8 +3,9 @@ import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.css';
 import { TopLevelCategory } from '@/interfaces/page.interface';
 import { SortEnum } from '@/components/Sort/Sort.props';
-import { useReducer } from 'react';
+import { use, useEffect, useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
+import { useScrollY } from '@/components/hooks/useScrollY';
 
 export const TopPageComponent = ({
   page,
@@ -16,9 +17,15 @@ export const TopPageComponent = ({
     sort: SortEnum.Rating,
   });
 
+  const y = useScrollY();
+
   const setSort = (sort: SortEnum) => {
     dispatchSort({ type: sort });
   };
+
+  useEffect(() => {
+    dispatchSort({ type: 'reset', initialState: products });
+  }, [products]);
 
   return (
     <div className={styles.wrapper}>
@@ -31,7 +38,9 @@ export const TopPageComponent = ({
         )}
         <Sort sort={sort} setSort={setSort} />
       </div>
-      <div>{sortedProducts && sortedProducts.map((p) => <Product key={p._id} product={p} />)}</div>
+      <div>
+        {sortedProducts && sortedProducts.map((p) => <Product layout key={p._id} product={p} />)}
+      </div>
       <div className={styles.hhTitle}>
         <Htag tag="h2">Vacation - {page.category}</Htag>
         <Tag color="red" size="m">

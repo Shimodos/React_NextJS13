@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98a6788a-6a2f-4031-9200-169e776a5911" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/ButtonIcon.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/ButtonIcon.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/ButtonIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ButtonIcon/up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Up/Up.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Up/Up.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hooks/useScrollY.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Search/Search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Menu/Menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Menu/Menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/layout/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-components/TopPageComponents/TopPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/page-components/TopPageComponents/TopPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-components/TopPageComponents/sort.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/page-components/TopPageComponents/sort.reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +45,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2YDkdcAiexefLKJIbBe1WLUKTL1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -32,6 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -45,7 +71,7 @@
     "node.js.selected.package.stylelint": "C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "C:\\OpenServer\\domains\\localhost\\React_NextJS13\\top-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -100,6 +126,15 @@
       <workItem from="1703336605295" duration="100000" />
       <workItem from="1703336715464" duration="184000" />
       <workItem from="1703336995107" duration="409000" />
+      <workItem from="1703371055059" duration="121000" />
+      <workItem from="1703371186364" duration="35000" />
+      <workItem from="1703371229875" duration="170000" />
+      <workItem from="1703371408478" duration="837000" />
+      <workItem from="1703372256986" duration="156000" />
+      <workItem from="1703372425877" duration="17000" />
+      <workItem from="1703441551505" duration="665000" />
+      <workItem from="1703442229707" duration="1513000" />
+      <workItem from="1704298769244" duration="103000" />
     </task>
     <servers />
   </component>
@@ -116,5 +151,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
