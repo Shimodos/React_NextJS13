@@ -12,7 +12,12 @@ import { API } from '@/helpers/api';
 import axios from 'axios';
 import { useState } from 'react';
 
-export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps): JSX.Element => {
+export const ReviewForm = ({
+  productId,
+  isOpened,
+  className,
+  ...props
+}: ReviewFormProps): JSX.Element => {
   const {
     register,
     control,
@@ -48,12 +53,14 @@ export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps):
           {...register('name', { required: { value: true, message: 'Enter your name' } })}
           placeholder="Name"
           error={errors.name}
+          tabIndex={isOpened ? 0 : -1}
         />
         <Input
           {...register('title', { required: { value: true, message: 'Enter title' } })}
           placeholder="Review title"
           className={styles.title}
           error={errors.title}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.rating}>
           <span>Grade</span>
@@ -78,9 +85,12 @@ export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps):
           placeholder="Review text"
           className={styles.description}
           error={errors.description}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.submit}>
-          <Button appearance="primary">Send</Button>
+          <Button appearance="primary" tabIndex={isOpened ? 0 : -1}>
+            Send
+          </Button>
           <span className={styles.info}>
             *Before publication, the review will be pre-moderated and checked
           </span>
