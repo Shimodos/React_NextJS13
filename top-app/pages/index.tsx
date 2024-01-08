@@ -9,32 +9,7 @@ import { API } from '@/helpers/api';
 function Home({ menu }: HomeProps): JSX.Element {
   const [rating, setRating] = useState<number>(4);
 
-  return (
-    <>
-      <Htag tag="h1">Title</Htag>
-      <Button appearance="primary" arrow="right">
-        Button
-      </Button>
-      <Button appearance="ghost" arrow="right">
-        Button
-      </Button>
-      <P size="l">Larg</P>
-      <P>Medium</P>
-      <P size="s">Small</P>
-      <Tag size="s">Ghost</Tag>
-      <Tag size="m" color="red">
-        Red
-      </Tag>
-      <Tag size="m" color="green">
-        Green
-      </Tag>
-      <Tag color="primary">Primary</Tag>
-      <Tag color="grey">Grey</Tag>
-      <Rating rating={rating} isEditable setRating={setRating} />
-      <Input placeholder="Name" />
-      <Textarea placeholder="Description" />
-    </>
-  );
+  return <></>;
 }
 
 export default withLayout(Home);

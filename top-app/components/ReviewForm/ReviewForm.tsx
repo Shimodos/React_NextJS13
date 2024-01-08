@@ -97,16 +97,28 @@ export const ReviewForm = ({
         </div>
       </div>
       {isSuccess && (
-        <div className={cn(styles.success, styles.panel)}>
+        <div className={cn(styles.success, styles.panel)} role="alert">
           <div className={styles.successTitle}>Your review has been sent</div>
           <div>Thank you for your feedback. It will appear on the site soon.</div>
-          <CloseIcon className={styles.close} onClick={() => setIsSuccess(false)} />
+          <button
+            onClick={() => setIsSuccess(false)}
+            className={styles.close}
+            aria-label="Close notification"
+          >
+            <CloseIcon />
+          </button>
         </div>
       )}
       {error && (
-        <div className={cn(styles.error, styles.panel)}>
+        <div className={cn(styles.error, styles.panel)} role="alert">
           <div className={styles.errorTitle}>Error sending review, reload page</div>
-          <CloseIcon className={styles.close} onClick={() => setIsError(undefined)} />
+          <button
+            onClick={() => setIsError(undefined)}
+            className={styles.close}
+            aria-label="Close notification"
+          >
+            <CloseIcon />
+          </button>
         </div>
       )}
     </form>

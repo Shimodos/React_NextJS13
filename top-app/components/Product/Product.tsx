@@ -53,17 +53,23 @@ export const Product = motion(
             </div>
             <div className={styles.title}>{product.title}</div>
             <div className={styles.price}>
+              <span className="visuallyHidden">Price</span>
               {priceUa(product.price)}
               {product.oldPrice && (
                 <Tag className={styles.oldPrice} color="green">
+                  <span className="visuallyHidden">Old price</span>
                   {priceUa(product.price - product.oldPrice)}
                 </Tag>
               )}
             </div>
             <div className={styles.credit}>
+              <span className="visuallyHidden">Credit</span>
               {priceUa(product.credit)}/<span className={styles.month}>mon</span>
             </div>
             <div className={styles.rating}>
+              <span className="visuallyHidden">
+                {'Rating' + (product.reviewAvg ?? product.initialRating)}
+              </span>
               <Rating rating={product.reviewAvg ?? product.initialRating} />
             </div>
             <div className={styles.tags}>
@@ -73,8 +79,12 @@ export const Product = motion(
                 </Tag>
               ))}
             </div>
-            <div className={styles.priceTitle}>Price</div>
-            <div className={styles.creditTitle}>Credit</div>
+            <div className={styles.priceTitle} aria-hidden={true}>
+              Price
+            </div>
+            <div className={styles.creditTitle} aria-hidden={true}>
+              Credit
+            </div>
             <div className={styles.ratingTitle}>
               <a href="#ref" onClick={scrollToReview}>
                 {product.reviewCount}{' '}
@@ -120,6 +130,7 @@ export const Product = motion(
             </div>
           </Card>
           <motion.div
+            className={styles.reviewsCard}
             animate={isReviewOpened ? 'visible' : 'hidden'}
             variants={variants}
             initial={'hidden'}
