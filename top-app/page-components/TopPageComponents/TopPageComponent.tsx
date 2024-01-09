@@ -3,9 +3,11 @@ import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.css';
 import { TopLevelCategory } from '@/interfaces/page.interface';
 import { SortEnum } from '@/components/Sort/Sort.props';
-import { use, useEffect, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
 import { useScrollY } from '@/components/hooks/useScrollY';
+import { useReducedMotion } from 'framer-motion';
+import { tr } from 'date-fns/locale';
 
 export const TopPageComponent = ({
   page,
@@ -16,6 +18,8 @@ export const TopPageComponent = ({
     products,
     sort: SortEnum.Rating,
   });
+
+  const shouldReduceMotion = useReducedMotion();
 
   const y = useScrollY();
 
@@ -38,8 +42,16 @@ export const TopPageComponent = ({
         )}
         <Sort sort={sort} setSort={setSort} />
       </div>
-      <div>
-        {sortedProducts && sortedProducts.map((p) => <Product layout key={p._id} product={p} />)}
+      <div role="list">
+        {sortedProducts &&
+          sortedProducts.map((p) => (
+            <Product
+              role="listitem"
+              layout={shouldReduceMotion ? true : false}
+              key={p._id}
+              product={p}
+            />
+          ))}
       </div>
       <div className={styles.hhTitle}>
         <Htag tag="h2">Vacation - {page.category}</Htag>
