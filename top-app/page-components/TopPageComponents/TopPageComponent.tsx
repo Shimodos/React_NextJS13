@@ -7,7 +7,6 @@ import { useEffect, useReducer } from 'react';
 import { sortReducer } from './sort.reducer';
 import { useScrollY } from '@/components/hooks/useScrollY';
 import { useReducedMotion } from 'framer-motion';
-import { tr } from 'date-fns/locale';
 
 export const TopPageComponent = ({
   page,
