@@ -20,7 +20,7 @@ export const Up = (): JSX.Element => {
   };
   return (
     <motion.div className={styles.up} animate={control} initial={{ opacity: 0 }}>
-      <ButtonIcon appearance="primary" icon="up" onClick={scrollUp} />
+      <ButtonIcon appearance="primary" icon="up" aria-label="Up" onClick={scrollUp} />
     </motion.div>
   );
 };
