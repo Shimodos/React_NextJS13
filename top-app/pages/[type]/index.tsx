@@ -16,7 +16,7 @@ export default withLayout(Type);
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: firstLeveMenu.map((m) => '/' + m.route),
-    fallback: true,
+    fallback: false,
   };
 };
 

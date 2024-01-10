@@ -42,7 +42,9 @@ export const ReviewForm = ({
         setIsError('Something went wrong');
       }
     } catch (e) {
-      setIsError(e.message);
+      if (e instanceof Error) {
+        setIsError(e.message);
+      }
     }
   };
 

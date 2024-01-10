@@ -2,8 +2,7 @@ import { ButtonProps } from './Button.props';
 import styles from './Button.module.css';
 import cn from 'classnames';
 import ArrowIcon from './arrow.svg';
-import { motion, useMotionValue } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export const Button = ({
   appearance,

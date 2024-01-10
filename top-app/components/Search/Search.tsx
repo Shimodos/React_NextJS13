@@ -1,7 +1,7 @@
 import { SearchProps } from './Search.props';
 import styles from './Search.module.css';
 import cn from 'classnames';
-import { useState } from 'react';
+import { useState, KeyboardEvent } from 'react';
 import { Button } from '../Button/Button';
 import GlassIcon from './glass.svg';
 import { Input } from '../Input/Input';

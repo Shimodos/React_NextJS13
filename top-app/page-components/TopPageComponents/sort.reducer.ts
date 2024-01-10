@@ -1,8 +1,8 @@
-import { SortEnum } from '@/components/Sort/Sort.props';
-import { ProductModel } from '@/interfaces/page.interface';
+import { SortEnum } from '../../components/Sort/Sort.props';
+import { ProductModel } from '../../interfaces/product.interface';
 
 export type SortActions =
-  | { type: SortEnum.Price }
+  | { type: SortEnum }
   | { type: SortEnum.Rating }
   | { type: 'reset'; initialState: ProductModel[] };
 
@@ -21,7 +21,7 @@ export const sortReducer = (state: SortReducerState, action: SortActions): SortR
     case SortEnum.Price:
       return {
         sort: SortEnum.Price,
-        products: state.products.sort((a, b) => (a.initialRating > b.initialRating ? 1 : -1)),
+        products: state.products.sort((a, b) => (a.price > b.price ? 1 : -1)),
       };
     case 'reset':
       return {
@@ -29,6 +29,6 @@ export const sortReducer = (state: SortReducerState, action: SortActions): SortR
         products: action.initialState,
       };
     default:
-      throw new Error('Invalid sort type');
+      throw new Error('new type of sort');
   }
 };
