@@ -3,7 +3,7 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import axios from 'axios';
 import { MenuItem } from '../interfaces/menu.interface';
-import { API } from '@/helpers/api';
+import { API } from '../helpers/api';
 
 function Search(): JSX.Element {
   return <>Search</>;

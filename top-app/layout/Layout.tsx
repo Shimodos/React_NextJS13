@@ -5,9 +5,9 @@ import React, { FunctionComponent, useRef, useState, KeyboardEvent } from 'react
 import { Header } from './Header/Header';
 import { Sidebar } from './Sidebar/Sidebar';
 import { Footer } from './Footer/Footer';
-import { AppContextProvider } from '@/context/app.context';
-import { IAppContext } from '@/context/app.context';
-import { Up } from '@/components';
+import { AppContextProvider } from '../context/app.context';
+import { IAppContext } from '../context/app.context';
+import { Up } from '../components';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   const [isSkipLinkDisplayed, setIsSkipLinkDisplayed] = useState<boolean>(false);

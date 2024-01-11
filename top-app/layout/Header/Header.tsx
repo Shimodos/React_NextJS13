@@ -2,7 +2,7 @@ import { HeaderProps } from './Header.props';
 import styles from './Header.module.css';
 import cn from 'classnames';
 import Logo from '../logo.svg';
-import { ButtonIcon } from '@/components/ButtonIcon/ButtonIcon';
+import { ButtonIcon } from '../../components/ButtonIcon/ButtonIcon';
 import { motion } from 'framer-motion';
 import { Sidebar } from '../Sidebar/Sidebar';
 import { useEffect, useState } from 'react';

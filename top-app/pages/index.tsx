@@ -1,8 +1,8 @@
 import { withLayout } from '../layout/Layout';
 import { GetStaticProps } from 'next';
 import axios from 'axios';
-import { MenuItem } from '@/interfaces/menu.interface';
-import { API } from '@/helpers/api';
+import { MenuItem } from '../interfaces/menu.interface';
+import { API } from '../helpers/api';
 
 function Home({ menu }: HomeProps): JSX.Element {
   return (

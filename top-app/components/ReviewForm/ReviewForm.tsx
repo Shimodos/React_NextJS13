@@ -8,7 +8,7 @@ import { Textarea } from '../Textarea/Textarea';
 import { Button } from '../Button/Button';
 import { useForm, Controller } from 'react-hook-form';
 import { IReviewForm, IReviewSentResponse } from './ReviewForm.interface';
-import { API } from '@/helpers/api';
+import { API } from '../../helpers/api';
 import axios from 'axios';
 import { useState } from 'react';
 

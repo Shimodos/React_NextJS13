@@ -15,11 +15,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "paths": {
-      "@/*": ["./*"]
-    },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "svg.d.ts", "**/*.ts", "**/*.tsx", "pages/[type]/index.tsx__"],
+  "include": ["next-env-custom.d.ts", "images.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

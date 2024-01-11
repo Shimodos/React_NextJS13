@@ -3,9 +3,9 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import axios from 'axios';
 import { MenuItem } from '../../interfaces/menu.interface';
-import { firstLeveMenu } from '@/helpers/helpers';
-import { ParsedUrlQuery } from 'node:querystring';
-import { API } from '@/helpers/api';
+import { firstLeveMenu } from '../../helpers/helpers';
+import { ParsedUrlQuery } from 'querystring';
+import { API } from '../../helpers/api';
 
 function Type({ firstCategory }: TypeProps): JSX.Element {
   return <>Type {firstCategory}</>;

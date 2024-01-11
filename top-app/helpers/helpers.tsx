@@ -2,9 +2,8 @@ import CoursesIcon from './icons/courses.svg';
 import ServicesIcon from './icons/services.svg';
 import BooksIcon from './icons/books.svg';
 import ProductsIcon from './icons/products.svg';
-import { FirstLevelMenuItem } from '@/interfaces/menu.interface';
-import { TopLevelCategory } from '@/interfaces/page.interface';
-import { ca } from 'date-fns/locale';
+import { FirstLevelMenuItem } from '../interfaces/menu.interface';
+import { TopLevelCategory } from '../interfaces/page.interface';
 
 export const firstLeveMenu: FirstLevelMenuItem[] = [
   { route: 'courses', name: 'Courses', icon: <CoursesIcon />, id: TopLevelCategory.Courses },
